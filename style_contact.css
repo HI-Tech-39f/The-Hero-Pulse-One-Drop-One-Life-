@@ -1,0 +1,362 @@
+/* Note: Header CSS is kept identical for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body { background-color: #f9f9f9; 
+        
+}
+
+
+header { 
+    background: linear-gradient(135deg, #FF0000 0%, #B30000 100%);
+    color: white; 
+    height: 150px;
+    padding: 0 40px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+     display: flex;
+     flex-direction: column; 
+       position: relative; 
+    align-items: center;
+}
+
+
+/*header {
+    background-color: #d32f2f;
+    color: white;
+    height: 150px;
+    padding: 0 40px;
+    display: flex;
+}
+ header {
+            background-color: var(--primary-red); /* Red Header 
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }*/
+
+/*.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}*/
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/* .logo-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers Name/Slogan at left corner center 
+} */
+
+.logo-area h1 { font-size: 28px; }
+
+/*.slogan { font-style: italic; font-size: 14px; }*/
+.slogan { 
+    font-family: 'Playfair Display', serif; 
+    font-style: italic; 
+    font-size: 1.8rem; 
+    color: #ffcccc; 
+    margin-top: 10px; 
+}
+
+/* Navigation ko bottom-right corner mein fix karne ke liye */
+.main-nav {
+    position: absolute;   /* Header ke relative niche move karega */
+    right: 40px;          /* Right side se gap (header ki padding ke barabar) */
+    bottom: 10px;         /* Bilkul niche se thoda sa upar */
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+    /* Isse links ke niche thodi space bani rahegi */
+    display: inline-block; 
+}
+
+.main-nav a:hover {
+    color: #ffcccc;      /* Slogan wala color hover par */
+    transform: translateY(-2px); /* Chota sa bounce effect */
+}
+.my_style{
+    text-align: center;
+    text-size-adjust: inherit;
+    font-style: italic;
+    text-decoration: double;
+    font-family: sans-serif;
+    text-shadow: #b71c1c;
+}
+/*
+/* Form Styling 
+.content-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 { color: #d32f2f; margin-bottom: 10px; }
+
+.form-group { margin-bottom: 20px; }
+
+label { display: block; margin-bottom: 5px; font-weight: bold; color: #333; }
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn:hover { background-color: #b71c1c; }*/
+/*conatct page*/
+
+ :root {
+            --primary-red: #d32f2f; /* Main Theme Red */
+            --slogan-red: #ff8a80;  /* Light Red for Slogan */
+            --dark-grey: #2c3e50;
+            --footer-bg: #1a252f;
+            --light-grey: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-grey);
+            margin: 0;
+            padding: 0;
+            color: var(--dark-grey);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+             background-image: linear-gradient(rgba(0,0,0,0.6),(0,0,0,0.6)),url('"C:\Users\HP\Desktop\THE HERO PULSE\pngtree-mesmerizing-red-and-white-gradient-background-with-a-smooth-picture-image_15274542.jpg"');
+        background-size: auto;
+        background-position: center;
+        background-attachment: fixed;
+        }
+
+        /* Updated Header Styling */
+       /* header {
+            background-color: var(--primary-red); /* Red Header 
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }*/
+
+        header h1 {
+            color: var(--white); /* White Name */
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header .slogan {
+            font-size: 1.3rem;
+            color: var(--slogan-red); /* Light Red Slogan */
+            font-style: italic;
+            margin-top: 8px;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+            text-decoration-color: #ff8a80;
+        }
+
+
+ .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-title h2 {
+            font-size: 2rem;
+            color: var(--dark-grey);
+        }
+
+        /* Layout Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .form-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .form-card h3 {
+            margin-top: 0;
+            border-left: 4px solid var(--primary-red);
+            padding-left: 15px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .btn-submit {
+            background-color: var(--primary-red);
+            color: var(--white);
+            padding: 14px 28px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Contact Details Card */
+        .info-card {
+            background: var(--dark-grey);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .info-group h3 {
+            color: var(--slogan-red);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .info-group p {
+            margin: 5px 0;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-bottom: 60px;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary-red);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .faq-item h4 {
+            color: var(--primary-red);
+            margin-top: 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--white);
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-grid, .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 { font-size: 2.2rem; }
+        }
+        .footer_56 {
+    background-color: #8b1e1e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: large;
+}
+
+
+.logo-area {
+    display: flex;
+    align-items: center; /* Image aur Text ko vertically center rakhega */
+    gap: 15px;           /* Logo aur Text ke darmiyan fasla */
+}
+
+.header-logo {
+    width: 60px;         /* Logo ka size (aap marzi se chota bada kar sakte hain) */
+    height: 60px;
+    border-radius: 50%;  /* Agar aap round logo chahte hain */
+    object-fit: cover;
+    border: 2px solid #ffcccc; /* Logo ke charon taraf halki border */
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}

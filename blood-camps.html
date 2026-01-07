@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Camps</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa, #eef2f3);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .page-header {
+            background: linear-gradient(135deg, #8b1e1e, #b22222);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Main container */
+        .container {
+            flex: 1;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Info box */
+        .info-box {
+            background: #fff;
+            border-left: 6px solid #8b1e1e;
+            padding: 18px 22px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            line-height: 1.6;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Content paragraphs */
+        .content p {
+            background: #fff;
+            padding: 18px 22px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            line-height: 1.7;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Cards */
+        .city-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .city-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .city-card h3 {
+            color: #8b1e1e;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .city-card p {
+            margin: 6px 0;
+            font-size: 15px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 22px;
+            background: linear-gradient(135deg, #8b1e1e, #b22222);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Back link */
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #8b1e1e;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .apply-button {
+  background: #8b1e1e;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+.apply-button .butn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 40px;
+  background: #ffffff;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.apply-button .btn:hover {
+  background: #f5eab6;
+}
+ 
+    </style>
+</head>
+
+<body>
+
+    <div class="page-header">Blood Camps / Blood Donation Drives</div>
+
+    <div class="container">
+
+        <section class="content">
+            <p>
+                Organizing blood donation camps is an effective way to meet the
+                increasing demand of blood. Every year, blood camps are organized
+                on 14th June in all units of Institute of Blood Transfusion Service.
+            </p>
+
+            <p>
+                In these camps, free blood grouping and screening facilities are
+                provided to blood donors. The collected blood is issued to
+                thalassemia, cancer and other needy patients on Non Donor Basis (NDB).
+            </p>
+
+            <p>
+                Blood donation camps help save thousands of lives. Due to the increase
+                in surgeries and medical emergencies, regular blood donation drives
+                are essential to meet the rising demand.
+            </p>
+        </section>
+
+        <div class="info-box">
+            Blood donation camps are organized to promote voluntary blood donation
+            and ensure availability of safe blood.
+        </div>
+
+        <div class="city-card">
+            <h3>Lahore Camp</h3>
+            <p>University of Lahore</p>
+            <p>📅 12 March 2026</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="city-card">
+            <h3>Faisalabad Camp</h3>
+            <p>Allied Hospital</p>
+            <p>📅 20 March 2026</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <section class="content">
+            <p>
+                According to the World Health Organization, safe blood is essential
+                for saving mothers. Severe bleeding during childbirth is a major
+                cause of maternal deaths, and timely availability of safe blood
+                can prevent such tragedies.
+            </p>
+        </section>
+
+       <section class="apply-button">
+        <h2>We are always here to facilitate you</h2>
+    <a href="services.html" class="butn">Back To Services</a>
+  </section>
+
+    </div>
+
+
+</body>
+</html>

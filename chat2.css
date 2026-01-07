@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url("pngtree-mesmerizing-red-and-white-gradient-background-with-a-smooth-picture-image_15274542.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    
+}
+
+.main-header {
+    background: #c62828;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    background: rgba(255,255,255,0.95);
+}
+
+.hero-img {
+    width: 350px;
+}
+
+.section {
+    padding: 50px;
+    margin: 20px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 10px;
+}
+
+.section.light {
+    background: rgba(255,240,240,0.95);
+}
+
+.section h2 {
+    color: #c62828;
+    margin-bottom: 20px;
+}
+
+.donation-form input,
+.donation-form select,
+.donation-form textarea,
+section input,
+section select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #c62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.my image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}

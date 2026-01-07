@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - The Hero Pulse</title>
+    <link rel="stylesheet" href="style_home.css">
+    <style>
+        /* Shared styles with login plus some extra for larger form */
+        .auth-container { display: flex; justify-content: center; align-items: center; padding: 50px 20px; }
+        .auth-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+        .auth-card h2 { color: #c62828; text-align: center; margin-bottom: 20px; }
+        .form-row { display: flex; gap: 10px; }
+        .form-group { flex: 1; margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-submit {
+            width: 100%;
+            background: #c62828;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .back-home { display: block; text-align: center; margin-top: 20px; text-decoration: none; color: #666; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-area">
+            <h1 class="design"> THE HERO PULSE</h1>
+            <p class="slogan">"One Drop, One Life"</p>
+        </div>
+</header>
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Create Account</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Blood Group</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option>A+</option><option>A-</option>
+                        <option>B+</option><option>B-</option>
+                        <option>O+</option><option>O-</option>
+                        <option>AB+</option><option>AB-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="email@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+92 300 0000000" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Create password" required>
+            </div>
+            <button type="submit" class="btn-submit">Register Now</button>
+        </form>
+        <p style="text-align: center; margin-top: 15px;">Already have an account? <a href="login.html" style="color: #c62828;">Login</a></p>
+        <a href="home.html" class="back-home">← Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>

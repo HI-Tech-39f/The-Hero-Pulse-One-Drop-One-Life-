@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate Blood | The Hero Pulse</title>
+    <link rel="stylesheet" href="chat2.css">
+    <script>
+        function checkEligibility() {
+            const teen = document.getElementById("teen").value;
+            const lastDate = new Date(document.getElementById("lastDonation").value);
+            const today = new Date();
+            const diffDays = (today - lastDate) / (1000 * 60 * 60 * 24);
+            const cancer = document.getElementById("cancer").value;
+            const weight = document.getElementById("weight").value;
+
+            if (teen === "no" || cancer === "yes" || weight === "yes" || diffDays < 56) {
+                alert("You are NOT eligible to donate blood. Redirecting to Home Page.");
+                window.location.href = "home.html";
+            } else {
+                document.getElementById("eligibility").style.display = "none";
+                document.getElementById("donationForm").style.display = "block";
+            }
+        }
+
+        function validateEmail() {
+            const email = document.getElementById("email").value;
+            if (!email.endsWith("@gmail.com")) {
+                alert("Email must be a valid @gmail.com address");
+                return false;
+            }
+            document.getElementById("submitBtn").style.background = "#555";
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<header class="main-header">
+    <h1 class="logo">The Hero Pulse</h1>
+    <p class="slogan">One Drop, One Life.</p>
+</header>
+
+<!-- ELIGIBILITY -->
+<section class="section" id="eligibility">
+    <h2>Donor Eligibility Check <hr>                                              
+        <style>
+        div{
+            color: black;
+        }
+    </style>                                 Must Enter your Last Donation Date</h2>
+
+    <select id="teen">
+        <option value="no">Are you teen aged?</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <input type="date" id="lastDonation">
+    
+    <select id="cancer">
+        <option value="no">Do you have cancer?</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <select id="weight">
+        <option value="no">Is your weight less than 50kg?</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <button class="btn" onclick="checkEligibility()">Check Eligibility</button>
+</section>
+
+<!-- DONATION FORM -->
+<section class="section light" id="donationForm" style="display:none;">
+    <h2>You are Eligible – Proceed to Donate</h2>
+
+    <form onsubmit="return validateEmail()">
+        <input type="text" placeholder="Full Name *" required>
+        <input type="text" placeholder="Current Address *" required>
+        <input type="number" placeholder="Age *" required>
+        <input type="text" placeholder="Contact Number *" required>
+
+        <input type="email" id="email" placeholder="Email ID (@gmail.com only) *" required>
+
+        <select required>
+            <option value="">Blood Group *</option>
+            <option>A+</option><option>B+</option><option>O+</option>
+            <option>AB+</option><option>A-</option><option>B-</option>
+            <option>O-</option><option>AB-</option>
+            <option>Bombay (hh)</option>
+        </select>
+
+        <input type="text" placeholder="Current Medications *" required>
+        <textarea placeholder="Any Current Disease (Optional)"></textarea>
+        <textarea placeholder="Other Notes (Optional)"></textarea>
+
+        <!-- BACKEND LINK HERE -->
+        <button id="submitBtn" type="submit" class="btn">
+            Submit Donation
+        </button>
+    </form>
+</section>
+
+</body>
+</html>
